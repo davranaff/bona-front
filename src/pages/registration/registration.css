@@ -1,0 +1,25 @@
+.registration__container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+}
+
+.registration__container_body {
+    width: 60%;
+    height: min-content;
+}
+
+.registration__passwords {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .registration__container {
+        padding: 25px 50px;
+    }
+}

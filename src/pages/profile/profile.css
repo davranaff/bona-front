@@ -1,0 +1,122 @@
+.profile__container {
+    width: auto;
+    height: min-content;
+    padding: 50px 100px;
+}
+
+.profile__container_header {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile__container_header h1 {
+    color: black;
+}
+
+.profile__container_header__buttons {
+    width: auto;
+    height: min-content;
+    display: flex;
+    gap: 10px;
+}
+
+.profile__container_content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.profile__container_content__item {
+    width: 50%;
+}
+
+.profile__container_content__item ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.profile__container_content__item li {
+    margin: 5px 0;
+}
+
+.form__passwords {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.profile__container_confirm {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 100px;
+    background-color: rgba(255, 115, 115, 0.3);
+    margin: 20px 0;
+}
+
+.profile__container_orders {
+    width: auto;
+    height: auto;
+}
+
+.profile__container_orders h1 {
+    font-size: 25px !important;
+}
+
+.profile__container_orders__content {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 10px;
+    text-align: center;
+    background-color: white;
+}
+
+.profile__container_orders__content_item {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 0 10px 20px -5px black;
+}
+
+.profile__container_orders__content_item b {
+    font-weight: 600;
+}
+
+.profile__container_orders__content_item-header {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.profile__product {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .profile__container {
+        padding: 25px 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .profile__container_header {
+        flex-direction: column-reverse;
+
+    }
+    .profile__container_header__buttons {
+        justify-content: space-between;
+    }
+}

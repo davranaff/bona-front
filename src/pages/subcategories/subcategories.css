@@ -1,0 +1,23 @@
+.subcategory__container {
+    width: auto;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.subcategory__container h1, .subcategory__container a {
+    font-size: 25px !important;
+}
+
+.subcategory__content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .subcategory__container {
+        padding: 25px 50px;
+    }
+}

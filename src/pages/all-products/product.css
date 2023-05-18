@@ -1,0 +1,40 @@
+.products-content h1 {
+    margin: 0;
+}
+
+.products-content {
+    width: auto;
+    height: auto;
+    padding: 20px 100px;
+}
+
+.products-content__header {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-content__title {
+    font-size: 25px;
+}
+
+.products-content__container {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .products-content {
+        padding: 25px 50px;
+    }
+
+    .products-content__container {
+        justify-content: space-between;
+    }
+}

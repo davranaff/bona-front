@@ -1,0 +1,49 @@
+.order__container {
+    width: auto;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.order__container_body {
+    width: auto;
+    background-color: #eeeeee;
+    padding: 10px;
+    box-shadow: 0 10px 10px -15px black;
+}
+
+.order__options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.order__buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+
+.order__form {
+    width: auto;
+    height: auto;
+}
+
+.order__form_item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .order__container {
+        padding: 25px 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .order__container {
+        padding: 10px;
+    }
+}

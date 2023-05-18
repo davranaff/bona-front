@@ -1,0 +1,144 @@
+.product_detail__section {
+    width: auto;
+    height: max-content;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product_detail__section h1,.product_detail__section h4 {
+    margin: 0;
+}
+
+.product_detail__left {
+    width: 50%;
+    height: max-content;
+    background-color: #e3e3e3;
+    position: relative;
+}
+
+.product_detail__left img {
+    width: 100%;
+    height: 400px;
+    position: sticky;
+    object-fit: cover;
+}
+
+.product_detail__right {
+    border-top: 1px solid black;
+    width: 45%;
+    height: min-content;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+
+.product__header {
+    width: auto;
+    height: min-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.product__actions {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.product__total {
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 10px 10px -5px black;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #e3e3e3;
+    margin: 10px 0;
+}
+
+.product_detail__sale {
+    position: absolute;
+    width: max-content;
+    height: auto;
+    background-color: #8d3434;
+    color: white;
+    padding: 10px;
+    z-index: 3;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.product_detail__country {
+    width: max-content;
+    position: absolute;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    gap: 5px;
+    background-color: #008300;
+    color: #fff;
+    right: 0;
+    z-index: 3;
+}
+
+.product__slide {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .product_detail__section {
+        padding: 25px 50px;
+        height: max-content;
+    }
+    .product_detail__left img {
+        height: 250px;
+    }
+
+    .product_detail__sale, del, b, .product_detail__country {
+        font-size: 10px !important;
+    }
+
+    .product__header h1, .product__header h4 {
+        font-size: 15px !important;
+    }
+
+    .product__total span {
+        font-size: 12px !important;
+    }
+
+    .product__slide {
+        height: max-content;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .product_detail__section {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .product_detail__left {
+        width: 100%;
+    }
+
+    .product_detail__right {
+        width: 100%;
+    }
+
+    .product__slide {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,144 @@
+.header__content {
+    width: auto;
+    height: min-content;
+    z-index: 0;
+}
+
+.header__content_item {
+    width: auto;
+    height: 600px;
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header__banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header__content_item__left {
+    gap: 20px;
+    color: white;
+    position: absolute;
+    left: 100px;
+    width: 350px;
+    height: auto;
+    top: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__content_item__left h1 {
+    margin: 0;
+    font-size: 30px !important;
+}
+
+.header__content_item__left h2 {
+    font-family: "permament", serif;
+    word-break: break-word;
+    font-size: 50px !important;
+    margin: 0;
+    color: #819b6d;
+}
+
+.header__content_item__left h1 {
+    margin: 0;
+}
+
+.header__content_item__buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header__content_item__info {
+    padding: 5px;
+    width: max-content;
+    height: 50px;
+    position: absolute;
+    background-color: white;
+    bottom: 40%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.header__content_item__info:hover {
+    cursor: pointer;
+}
+
+.header__content_item__info p {
+    font-size: 12px;
+    margin: 0;
+}
+
+.cube {
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 45%;
+    rotate: 45deg;
+}
+
+@media screen and (max-width: 768px) {
+    .header__content_item {
+        height: 500px;
+        background-size: 150%;
+    }
+
+    .header__content_item__left {
+        width: auto;
+        height: auto;
+        left: 60px;
+    }
+
+    .header__content_item__left h2 {
+        font-size: 25px !important;
+    }
+
+    .header__content_item__info {
+        right: 20%;
+    }
+
+    .header__content_item__info {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .header__content_item {
+        height: 300px;
+        background-size: 200%;
+    }
+
+    .header__content_item__left {
+        gap: 5px;
+        top: 35%;
+        left: 20%;
+    }
+
+    .header__content_item__info {
+        display: none;
+        right: 10%;
+        padding: 3px;
+    }
+
+    .cube {
+        width: 10px;
+        height: 10px;
+    }
+}
+

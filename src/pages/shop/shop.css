@@ -1,0 +1,34 @@
+.shop__container {
+    padding: 20px 100px;
+    width: auto;
+    height: min-content;
+}
+
+.shop__container h1 {
+    color: black;
+    font-size: 30px !important;
+}
+
+.shop__container_item {
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shop__container_item h1 {
+    padding-top: 15px;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .shop__container {
+        padding: 25px 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+}
+

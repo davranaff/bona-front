@@ -1,0 +1,29 @@
+.address {
+    width: auto;
+    height: auto;
+    text-align: left;
+}
+
+.address h1 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.address ul {
+    font-size: 15px;
+}
+
+.address li {
+    padding: 5px;
+    display: flex;
+    gap: 5px;
+}
+
+.address li:hover {
+    background-color: #cbcbcb;
+}
+
+
+.is_active {
+    background-color: #cbcbcb;
+}

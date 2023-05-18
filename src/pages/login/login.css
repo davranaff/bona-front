@@ -1,0 +1,32 @@
+.login__container {
+    width: auto;
+    height: auto;
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.forgot {
+    text-align: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.login__container_body {
+    width: 60%;
+    height: min-content;
+}
+
+.form__passwords {
+    display: flex;
+    gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .login__container {
+        padding: 25px 50px;
+    }
+}

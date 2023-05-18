@@ -1,0 +1,29 @@
+.promo__container {
+    width: auto;
+    height: auto;
+    padding: 50px 100px;
+}
+
+.promo__container h1 {
+    font-size: 25px !important;
+    margin: 0;
+}
+
+.promo__content {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+    .promo__container {
+        padding: 25px 50px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+}
