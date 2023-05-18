@@ -1,4 +1,4 @@
-export const API_URL = "http://localhost:8000"
+export const API_URL = "http://bonafresco79.pythonanywhere.com"
 
 export const HOME = "/api/app/home"
 export const PRODUCTS = "/api/app/products"
