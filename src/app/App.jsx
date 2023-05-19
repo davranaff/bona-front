@@ -9,7 +9,11 @@ import {API_URL, HOME} from "@/app/services/api/consts";
 import {BaseContext} from "@/pages/_app";
 import Product from "@/app/components/product/Product";
 
+
 export const UpdateContext = createContext(null)
+
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = "*"
+
 
 function App({children}) {
     const [home, setHome] = useState(null)
