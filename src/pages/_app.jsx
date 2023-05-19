@@ -8,7 +8,6 @@ import {Pages} from "@/app/router/routes";
 
 export const BaseContext = createContext(null)
 
-axios.defaults.headers.common['Access-Control-Allow-Origin'] = "*"
 
 function Application({Component, pageProps}) {
     const [userState, setUserState] = useState(null)
