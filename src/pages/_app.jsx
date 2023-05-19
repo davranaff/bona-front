@@ -5,8 +5,11 @@ import "../app/globals.css"
 import axios from "axios";
 import {API_URL, PROFILE} from "@/app/services/api/consts";
 import {Pages} from "@/app/router/routes";
+import axios from "axios";
 
 export const BaseContext = createContext(null)
+
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = "*"
 
 function Application({Component, pageProps}) {
     const [userState, setUserState] = useState(null)
