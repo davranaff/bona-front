@@ -3,7 +3,7 @@ const nextConfig = {
   async rewrites() {
     return [
       {
-        source: '/:path*',
+        source: '/api/:path*',
         destination: 'https://bonafresco79.pythonanywhere.com/:path*',
       },
     ]
