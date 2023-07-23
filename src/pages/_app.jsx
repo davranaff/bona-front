@@ -8,6 +8,7 @@ import {Pages} from "@/app/router/routes";
 
 export const BaseContext = createContext(null)
 
+
 function Application({Component, pageProps}) {
     const [userState, setUserState] = useState(null)
     const [basketCount, setBasketCount] = useState(null)
