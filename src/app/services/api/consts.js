@@ -1,4 +1,9 @@
+import axios from "axios"
+
+axios.defaults.headers.common["Sec-Fetch-Mode"] = "cors"
+
 export const API_URL = "https://bonafresco79.pythonanywhere.com"
+// export const API_URL = "http://localhost:8000"
 
 export const HOME = "/api/app/home"
 export const PRODUCTS = "/api/app/products"
