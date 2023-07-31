@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from "axios";
-import {API_URL, CATEGORIES} from "@/app/services/api/consts";
+import {API_URL, CATEGORIES, API_URL_MEDIA} from "@/app/services/api/consts";
 import CategoryItem from "@/app/components/category/categoryItem/CategoryItem";
 import {Pages} from "@/app/router/routes";
 import "./detail.css"
@@ -17,7 +17,7 @@ function Index({subcategories}) {
                     href={Pages.subcategories + value.id}
                     key={value.id} id={value.id}
                     title={value.name}
-                    imgUrl={API_URL + value.image}/>) : <h1>Empty...</h1>}
+                    imgUrl={API_URL_MEDIA + value.image}/>) : <h1>Empty...</h1>}
             </div>
         </div>
     )

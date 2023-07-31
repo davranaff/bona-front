@@ -3,7 +3,7 @@ import './index.css'
 import CategoryItem from "@/app/components/category/categoryItem/CategoryItem";
 import Subscribe from "@/app/components/subcribe/Subscribe";
 import axios from "axios";
-import {API_URL, CATEGORIES} from "@/app/services/api/consts";
+import {API_URL, CATEGORIES, API_URL_MEDIA} from "@/app/services/api/consts";
 import {Pages} from "@/app/router/routes";
 
 
@@ -18,7 +18,7 @@ function Index({categories}) {
                     <div className={'daily__content-category'}>
                         {categories.data.map(value => <CategoryItem href={Pages.category_detail + value.id}
                                                                     key={value.id} id={value.id} title={value.name}
-                                                                    imgUrl={API_URL + value.image}
+                                                                    imgUrl={API_URL_MEDIA + value.image}
                                                                     classFor={'category-item-daily'}/>)}
                     </div>
                     <div className={'daily__content-discount'}>

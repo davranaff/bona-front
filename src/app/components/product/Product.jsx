@@ -5,7 +5,7 @@ import Button from "@/app/UI/button/Button";
 import {AiFillHeart, AiOutlineHeart} from "react-icons/ai";
 import {Pages} from "@/app/router/routes";
 import {discountPrice} from "@/app/utils/discountPrice";
-import {API_URL, BASKET, WISHLIST} from "@/app/services/api/consts";
+import {API_URL, BASKET, WISHLIST, API_URL_MEDIA} from "@/app/services/api/consts";
 import {toast} from "react-toastify";
 import axios from "axios";
 import {UpdateContext} from "@/app/App";
@@ -93,7 +93,7 @@ function Product({value, is_wishlist=false}) {
         <div className={'product-block'}>
             {liked ? <span onClick={_ => handleLike()}><AiFillHeart className={"liked"}/></span> :
                 <span onClick={_ => handleLike()}><AiOutlineHeart className={"not-liked"}/></span>}
-            <img src={API_URL + value.image} alt=""/>
+            <img src={API_URL_MEDIA + value.image} alt=""/>
             {value.discount && <div className={"product_sale"}>Sale</div>}
             <div className={"product_country"}>{value.country.name}</div>
             <div className={'product-block__content'}>

@@ -5,7 +5,7 @@ import '@splidejs/react-splide/css';
 import Button from "@/app/UI/button/Button";
 import {AiOutlineHeart} from "react-icons/ai";
 import Input from "@/app/UI/input/Input";
-import {API_URL, BASKET, PRODUCTS} from "@/app/services/api/consts";
+import {API_URL, BASKET, PRODUCTS, API_URL_MEDIA} from "@/app/services/api/consts";
 import {useRouter} from "next/navigation";
 import {Pages} from "@/app/router/routes";
 import {BaseContext} from "@/pages/_app";
@@ -92,7 +92,7 @@ function HeaderItem({value}) {
     }
 
     return (
-        <div className={"header__content_item"} style={{backgroundImage: `url(${API_URL + value.image})`}}>
+        <div className={"header__content_item"} style={{backgroundImage: `url(${API_URL_MEDIA + value.image})`}}>
             <div className={"header__content_item__left"}>
                 <h1>Get groceries</h1>
                 <h2>Delivered to You</h2>
