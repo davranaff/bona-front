@@ -28,7 +28,7 @@
 }
 
 .daily__content-category {
-    width: 65%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     height: auto;

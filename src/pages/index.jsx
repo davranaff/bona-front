@@ -21,9 +21,9 @@ function Index({categories}) {
                                                                     imgUrl={API_URL_MEDIA + value.image}
                                                                     classFor={'category-item-daily'}/>)}
                     </div>
-                    <div className={'daily__content-discount'}>
+                    {/* <div className={'daily__content-discount'}>
 
-                    </div>
+                    </div> */}
                 </div>
             </section>
             <Subscribe/>
