@@ -25,7 +25,9 @@ function App({children}) {
             headers: localStorage.getItem("token") && {
                 Authorization: `Token ${localStorage.getItem("token")}`
             }
-        }).then(res => setHome(res.data.data)).catch(err => _)
+        }).then(res => {
+            setHome(res.data.data)
+        }).catch(err => _)
     }, [update])
 
     return (
@@ -39,7 +41,7 @@ function App({children}) {
                         {search.map(value => <Product key={value.id} value={value}/>)}
                     </div>
                 </div>}
-                <div style={!!home.banner && {paddingTop: "150px"}}>
+                <div style={home && (home.banner && home.banner.length === 0) ? {paddingTop: "150px"} : {paddingTop: "0"}}>
                     {children}
                 </div>
                 <Footer/>
