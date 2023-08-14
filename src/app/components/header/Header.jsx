@@ -14,23 +14,25 @@ import axios from "axios";
 import {UpdateContext} from "@/app/App";
 
 function Header(props) {
-    return (
-        <div className={'header__content'}>
-            <Splide options={{
-                perPage: 1,
-                pagination: false,
-                autoplay: true,
-                interval: 3000,
-                type: "loop",
-                rewind: true,
-                speed: 1000
-            }}>
-                {props.banner && props.banner.map(value => <SplideSlide key={value.id}>
-                    <HeaderItem value={value}/>
-                </SplideSlide>)}
-            </Splide>
-        </div>
-    );
+    if (props.banner) {
+        return (
+            <div className={'header__content'}>
+                <Splide options={{
+                    perPage: 1,
+                    pagination: false,
+                    autoplay: true,
+                    interval: 3000,
+                    type: "loop",
+                    rewind: true,
+                    speed: 1000
+                }}>
+                    {props.banner && props.banner.map(value => <SplideSlide key={value.id}>
+                        <HeaderItem value={value}/>
+                    </SplideSlide>)}
+                </Splide>
+            </div>
+        )
+    }
 }
 
 function HeaderItem({value}) {
