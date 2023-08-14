@@ -6,7 +6,7 @@ import {Splide, SplideSlide} from "@splidejs/react-splide";
 import Product from "@/app/components/product/Product";
 import '@splidejs/react-splide/css';
 import axios from "axios";
-import {API_URL, BASKET, PRODUCTS} from "@/app/services/api/consts";
+import {API_URL, API_URL_MEDIA, BASKET, PRODUCTS} from "@/app/services/api/consts";
 import product from "@/app/components/product/Product";
 import {discountPrice} from "@/app/utils/discountPrice";
 import {toast} from "react-toastify";
@@ -67,7 +67,7 @@ function Index(props) {
                 <div className={"product_detail__country"}>
                     {props.data.country.name}
                 </div>
-                <img src={API_URL + props.data.image} alt=""/>
+                <img src={API_URL_MEDIA + props.data.image} alt=""/>
             </div>
             <div className={"product_detail__right"}>
                 <div className={"product__header"}>
