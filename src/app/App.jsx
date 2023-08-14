@@ -39,7 +39,7 @@ function App({children}) {
                         {search.map(value => <Product key={value.id} value={value}/>)}
                     </div>
                 </div>}
-                <div style={!home.banner && {paddingTop: "150px"}}>
+                <div style={!!home.banner && {paddingTop: "150px"}}>
                     {children}
                 </div>
                 <Footer/>
