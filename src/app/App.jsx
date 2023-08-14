@@ -41,7 +41,7 @@ function App({children}) {
                         {search.map(value => <Product key={value.id} value={value}/>)}
                     </div>
                 </div>}
-                <div style={home && (home.banner && home.banner.length === 0) ? {paddingTop: "150px"} : {paddingTop: "0"}}>
+                <div style={home && (home.banner && home.banner.length) ? {paddingTop: "0"} : {paddingTop: "150px"}}>
                     {children}
                 </div>
                 <Footer/>
