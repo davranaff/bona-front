@@ -2,17 +2,13 @@
 
 
 const nextConfig = {
-  modules: ["@nuxtjs/proxy"],
-  proxy: {
-    "https://bonafresco79.pythonanywhere.com": {target: "API_URL", pathRewrite: {"^": ""}}
-  },
   experimental: {
     appDir: true,
   },
   async headers() {
     return [
       {
-        source: "/api/:path*",
+        source: ":path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" }, // replace this your actual origin
