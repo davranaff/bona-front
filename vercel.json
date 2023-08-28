@@ -1,7 +1,7 @@
 {
     "headers": [
       {
-        "source": "https://bonafresco79.pythonanywhere.com/(.*)",
+        "source": "https://www.bonafresco.com/(.*)",
         "headers": [
           { "key": "Access-Control-Allow-Credentials", "value": "true" },
           { "key": "Access-Control-Allow-Origin", "value": "*" },

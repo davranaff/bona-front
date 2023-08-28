@@ -8,7 +8,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "https://bonafresco79.pythonanywhere.com/:path*",
+        source: "https://www.bonafresco.com/:path*",
         headers: [
           { key: "Access-Control-Allow-Credentials", value: "true" },
           { key: "Access-Control-Allow-Origin", value: "*" }, // replace this your actual origin
