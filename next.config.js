@@ -2,6 +2,10 @@
 
 
 const nextConfig = {
+  modules: ["@nuxtjs/proxy"],
+  proxy: {
+    "https://bonafresco79.pythonanywhere.com": {target: "API_URL", pathRewrite: {"^": ""}}
+  },
   experimental: {
     appDir: true,
   },
