@@ -1,5 +1,5 @@
-export const API_URL = "http://bonafresco79.pythonanywhere.com"
-export const API_URL_MEDIA = "http://bonafresco79.pythonanywhere.com/file"
+export const API_URL = "https://bonafresco79.pythonanywhere.com"
+export const API_URL_MEDIA = "https://bonafresco79.pythonanywhere.com/file"
 // export const API_URL = "http://localhost:8000"
 
 export const HOME = "/api/app/home"
