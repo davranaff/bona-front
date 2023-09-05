@@ -1,9 +1,13 @@
 import axios from "axios"
 
-axios.defaults.headers.common["Sec-Fetch-Mode"] = "cors"
-axios.defaults.headers.common["Access-Control-Allow-Origin"] = "https://bonafresco.com"
+axios.defaults.headers.common["Access-Control-Allow-Origin"] = "https://www.bonafresco.com"
 axios.defaults.headers.common["Access-Control-Allow-Methods"] = "GET,DELETE,PATCH,POST,PUT"
 axios.defaults.headers.common["Access-Control-Allow-Headers"] = "X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version"
+axios.defaults.headers.common["Host"] = "bonafresco79.pythonanywhere.com"
+axios.defaults.headers.common["Origin"] = "https://www.bonafresco.com"
+axios.defaults.headers.common["Sec-Fetch-Dest"] = "empty"
+axios.defaults.headers.common["Sec-Fetch-Mode"] = "cors"
+axios.defaults.headers.common["Sec-Fetch-Site"] = "cross-site"
 
 export const API_URL = "https://bonafresco79.pythonanywhere.com"
 export const API_URL_MEDIA = "https://bonafresco79.pythonanywhere.com/file"
