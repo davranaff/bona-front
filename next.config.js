@@ -5,14 +5,6 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: "/profile",
-        destination: "/"
-      },
-    ]
-  },
   async headers() {
     return [
       {
