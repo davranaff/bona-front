@@ -6,7 +6,12 @@ const nextConfig = {
     appDir: true,
   },
   async rewrites() {
-    return []
+    return [
+      {
+        source: "/profile",
+        destination: "/"
+      },
+    ]
   },
   async headers() {
     return [
